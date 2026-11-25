@@ -30,7 +30,6 @@ def get_aeroplanes_by_altitude(aeroplanes: List[Aeroplane], altitude_range: str)
         return aeroplanes
 
 
-
 def sort_aeroplanes(aeroplanes: List[Aeroplane]) -> List[Aeroplane]:
     """Сортирует самолеты по убыванию высоты (DESC)."""
     return sorted(aeroplanes, reverse=True)

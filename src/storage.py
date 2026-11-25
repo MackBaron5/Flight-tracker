@@ -68,6 +68,9 @@ class JSONSaver(BaseStorage):
         data = self._read_file()
         updated_data = [
             item for item in data
-            if not (item.get("callsign") == aeroplane.callsign and item.get("origin_country") == aeroplane.origin_country)
+            if not (
+                    item.get("callsign") == aeroplane.callsign
+                    and item.get("origin_country") == aeroplane.origin_country
+            )
         ]
         self._write_file(updated_data)

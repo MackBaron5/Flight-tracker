@@ -1,4 +1,3 @@
-import pytest
 from src.aeroplane import Aeroplane
 
 
@@ -46,7 +45,10 @@ def test_aeroplane_to_dict_and_str():
 
 def test_cast_to_object_list():
     raw_data = [
-        ["4b1812", "SWR123 ", "Switzerland", 1600000, 1600000, 8.5, 47.4, 8000.0, False, 210.0, 90.0, 0.0, None, 8100.0],
+        [
+            "4b1812", "SWR123 ", "Switzerland", 1600000, 1600000,
+            8.5, 47.4, 8000.0, False, 210.0, 90.0, 0.0, None, 8100.0
+        ],
         ["short_invalid_list"]
     ]
     planes = Aeroplane.cast_to_object_list(raw_data)
