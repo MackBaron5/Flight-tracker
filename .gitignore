@@ -1,0 +1,19 @@
+# Виртуальные окружения
+.venv/
+venv/
+env/
+
+# Кэш Python и тестов
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Настройки IDE
+.idea/
+.vscode/
+
+# Локальные данные приложения (создаются при запуске)
+data/*.json
